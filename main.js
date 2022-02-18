@@ -1,6 +1,5 @@
 // Initialize Firebase and other Firebase Imports
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js';
-import {getAnalytics} from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-analytics.js";';
 
 const dotenv = require(dotenv);
 dotenv.config();
@@ -15,7 +14,6 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
 //Sign Up Users
 import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
