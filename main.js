@@ -11,7 +11,7 @@ const firebaseConfig = {
     measurementID: 'G-F0LRYL3NQC'
 };
 
-const app = initializeApp(firebaseConfig);
+
 
 //Sign Up Users
 import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
@@ -19,6 +19,7 @@ import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com
 const auth = getAuth();
 
 async function signUpUser(email, password) {
+    initializeApp(firebaseConfig);
     createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {
         const user = userCredential.user;
         console.log("Create Success! " + user);
@@ -33,6 +34,7 @@ async function signUpUser(email, password) {
 //Sign in Users
 import {signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
 function signInUser(email, password) {
+    initializeApp(firebaseConfig);
     signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
         const user = userCredential.user;
         console.log("Log in Success!");
