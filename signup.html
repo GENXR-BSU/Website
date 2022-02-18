@@ -12,7 +12,7 @@
                 <p>Enter email and password.</p>
               </div>
             </div>
-            <form class="login-form">
+            <form class="login-form" onsubmit="signUpUser(document.getElementById('email').value, document.getElementById('password').value)">
               <input id="email" type="email" placeholder="email"/>
               <input id="password" type="password" placeholder="password"/>
               <input id="confirmPassword" type="password" placeholder="confirm">
