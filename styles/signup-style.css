@@ -42,7 +42,7 @@ header .header{
     box-sizing: border-box;
     font-size: 14px;
   }
-  #login_button {
+  #signUpButton {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     outline: 0;
