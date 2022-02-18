@@ -21,13 +21,13 @@ const auth = getAuth();
 async function signUpUser(email, password) {
     createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {
         const user = userCredential.user;
+        console.log("Create Success@");
+        window.location.href = "main.html"
     }).catch((error) => {
         const code = error.code
         const errorMessage = error.messaging
 
-        alert(code + ": " + errorMessage)
-    }).finally(() => {
-        window.location.href = "main.html"
+        console.log(code, errorMessage);
     })
 }
 //Sign in Users
@@ -35,12 +35,12 @@ import {signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.4
 function signInUser(email, password) {
     signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
         const user = userCredential.user;
+        console.log("Log in Success!");
+        window.location.href = "main.html"
     }).catch((error) => {
         const code = error.code;
         const message = error.message;
 
-        alert(code + ": " + message)
-    }).finally(() => {
-        window.location.href = "main.html"
+        console.log(code, message);
     })
 }
