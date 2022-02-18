@@ -1,1 +1,1 @@
-<?php include_once('src/login.html') ?>
+<?php include('src/') ?>
