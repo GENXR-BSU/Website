@@ -1,6 +1,6 @@
 // Initialize Firebase and other Firebase Imports
-import {initializeApp} from 'node_modules/firebase/app';
-import {getAnalytics} from 'node_modulesfirebase/analytics';
+import {initializeApp} from '/node_modules/firebase/app';
+import {getAnalytics} from '/node_modulesfirebase/analytics';
 
 const dotenv = require(dotenv);
 dotenv.config();
