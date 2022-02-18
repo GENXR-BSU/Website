@@ -33,7 +33,7 @@ async function signUpUser(email, password) {
     })
 }
 //Sign in Users
-import {signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+import {signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
 function signInUser(email, password) {
     signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
         const user = userCredential.user;
