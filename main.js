@@ -1,6 +1,6 @@
 // Initialize Firebase and other Firebase Imports
-import {initializeApp} from '/node_modules/firebase/app';
-import {getAnalytics} from '/node_modulesfirebase/analytics';
+import {initializeApp} from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js';
+import {getAnalytics} from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-analytics.js";';
 
 const dotenv = require(dotenv);
 dotenv.config();
@@ -18,7 +18,7 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 //Sign Up Users
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
 
 const auth = getAuth();
 
@@ -35,7 +35,7 @@ async function signUpUser(email, password) {
     })
 }
 //Sign in Users
-import {signInWithEmailAndPassword} from "firebase/auth"
+import {signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
 function signInUser(email, password) {
     signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
         const user = userCredential.user;
