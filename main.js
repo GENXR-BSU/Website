@@ -21,7 +21,7 @@ const auth = getAuth();
 async function signUpUser(email, password) {
     createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {
         const user = userCredential.user;
-        console.log("Create Success@");
+        console.log("Create Success! " + user);
         window.location.href = "main.html"
     }).catch((error) => {
         const code = error.code
