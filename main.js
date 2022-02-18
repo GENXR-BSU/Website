@@ -22,7 +22,7 @@ async function signUpUser(email, password) {
     createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {
         const user = userCredential.user;
         console.log("Create Success! " + user);
-        window.location.href = "main.html"
+        //window.location.href = "main.html"
     }).catch((error) => {
         const code = error.code
         const errorMessage = error.messaging
@@ -36,7 +36,7 @@ function signInUser(email, password) {
     signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
         const user = userCredential.user;
         console.log("Log in Success!");
-        window.location.href = "main.html"
+        //window.location.href = "main.html"
     }).catch((error) => {
         const code = error.code;
         const message = error.message;
