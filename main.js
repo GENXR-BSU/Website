@@ -1,16 +1,14 @@
 // Initialize Firebase and other Firebase Imports
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js';
 
-const dotenv = require(dotenv);
-dotenv.config();
 const firebaseConfig = {
-    apiKey: process.env.API_KEY,
-    authDomain: process.env.AUTH_DOMAIN,
-    projectId: process.env.PROJECT_ID,
-    storageBucket: process.env.STORAGE_BUCKET,
-    messagingSenderId: process.env.MESSAGING_SENDER_ID,
-    appID: process.env.APP_ID,
-    measurementID: process.env.MEASUREMENT_ID
+    apiKey: 'AIzaSyBfxfTdDZ16BMAJw7VZdCcpW6P1UlnYQCk',
+    authDomain: 'genxr-b88db.firebaseapp.com',
+    projectId: 'genxr-b88db',
+    storageBucket: 'genxr-b88db.appspot.com',
+    messagingSenderId: '153314800064',
+    appID: '1:153314800064:web:927a8efa69d30fa47ed825',
+    measurementID: 'G-F0LRYL3NQC'
 };
 
 const app = initializeApp(firebaseConfig);
