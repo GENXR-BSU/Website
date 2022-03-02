@@ -8,7 +8,7 @@
   --transition-speed: 600ms;
 
   --gradient-primary: #f2167c;
-  --gradient-secondaru: #5628d4;
+  --gradient-secondary: #5628d4;
 }
 
 body {
@@ -17,8 +17,8 @@ body {
 }
 main
 {
-    background-color: var(--gradient-primary);
-    background-image: linear-gradient(45deg, var(--gradient-primary), var(--gradient-secondary));
+    
+    background: linear-gradient(45deg,var(--gradient-primary), var(--gradient-secondary));
     -webkit-transition: all 1 ease;
     transition: all 0.3 ease;
     animation: gradient 15s ease infinite;
