@@ -1,0 +1,16 @@
+<div class="main-signup-page">
+    <div class="form">
+        <div class="signup">
+            <div class="signup-header">
+                <h3>Sign Up</h3>
+                <p>Enter email and password.</p>
+            </div>
+        </div>
+        <form class="signup-form">
+            <input id="email" type="email" placeholder="email" #username/>
+            <input id="password" type="password" placeholder="password" #password />
+            <button id="signup_button" type="button" (click)="signUp(username.value, password.value)"> Sign Up</button>
+            <p class="message">Click <a class="link_button" routerLink='/login' routerLinkActive="active">here</a> if you have an account.</p>
+        </form>
+    </div>
+</div>
